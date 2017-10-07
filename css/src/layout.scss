@@ -1,0 +1,405 @@
+*, *:after, *:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.pm-container,.pm-container-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+html {
+    height: 100%;
+}
+body, html {
+    min-height: 100%;
+}
+
+/* Text align */
+
+.pm-text-left {
+    text-align: left;
+}
+
+.pm-text-right {
+    text-align: right;
+}
+
+.pm-text-center {
+    text-align: center;
+}
+
+
+/* Floats */
+
+.pm-float-left {
+    float: left;
+}
+
+.pm-float-right {
+    float: right;
+}
+
+.pm-float-none {
+    float: none;
+}
+
+
+/* Vertical align */
+
+.pm-vertical-align:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+[class*="pm-vertical-align-"] {
+    display: inline-block;
+}
+
+.pm-vertical-align-top {
+    vertical-align: top;
+}
+
+.pm-vertical-align-middle {
+    vertical-align: middle;
+}
+
+.pm-vertical-align-bottom {
+    vertical-align: bottom;
+}
+
+
+/* Absolute centering */
+
+.pm-relative {
+    position: relative;
+}
+
+.pm-absolute-center {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+
+/* Circle element */
+
+.pm-circle {
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+}
+
+
+/*== Grid ==*/
+
+/* Grid clearfix */
+
+.pm-row:before, .pm-row:after {
+    content: " ";
+    display: table;
+}
+
+.pm-row:after {
+    clear: both;
+}
+
+.pm-row + .pm-row {
+    margin-top: 20px;
+}
+
+[class*="pm-width-"] {
+    width: 100%;
+}
+
+.pm-row > [class*="pm-width-"] {
+    float: left;
+    padding-left: 20px;
+}
+
+.pm-row {
+    margin-left: -20px;
+}
+
+
+/* No Padding Grid */
+
+.pm-row-nopad {
+    margin-left: 0;
+}
+.pm-row-nopad + .pm-row-nopad {
+    margin-top: 0;
+}
+.pm-row-nopad > [class*="pm-width-"] {
+    padding-left: 0;
+}
+
+.pm-width-1-2, .pm-width-2-4, .pm-width-3-6 {
+    width: 50%;
+}
+
+.pm-width-1-3, .pm-width-2-6 {
+    width: 33.333%;
+}
+
+.pm-width-2-3, .pm-width-4-6 {
+    width: 66.667%;
+}
+
+.pm-width-1-4 {
+    width: 25%;
+}
+
+.pm-width-3-4 {
+    width: 75%;
+}
+
+.pm-width-1-5 {
+    width: 20%;
+}
+
+.pm-width-2-5 {
+    width: 40%;
+}
+
+.pm-width-3-5 {
+    width: 60%;
+}
+
+.pm-width-4-5 {
+    width: 80%;
+}
+
+.pm-width-1-6 {
+    width: 16.667%;
+}
+
+.pm-width-5-6 {
+    width: 83.333%;
+}
+
+.pm-width-1-7 {
+    width: 14.2857%;
+}
+
+.pm-width-1-8 {
+    width: 12.5%;
+}
+
+.pm-width-1-9 {
+    width: 11.1111%;
+}
+
+.pm-width-1-10 {
+    width: 10%;
+}
+
+
+/* Phone landscape and bigger */
+
+@media (min-width: 480px) {
+    .pm-float-left-small {
+        float: left;
+    }
+
+    .pm-float-right-small {
+        float: right;
+    }
+    /* Whole */
+    .pm-width-small-1-1 {
+        width: 100%;
+    }
+    /* Halves */
+    .pm-width-small-1-2, .pm-width-small-2-4, .pm-width-small-3-6 {
+        width: 50%;
+    }
+    /* Thirds */
+    .pm-width-small-1-3, .pm-width-small-2-6 {
+        width: 33.333%;
+    }
+    .pm-width-small-2-3, .pm-width-small-4-6 {
+        width: 66.666%;
+    }
+    /* Quarters */
+    .pm-width-small-1-4 {
+        width: 25%;
+    }
+    .pm-width-small-3-4 {
+        width: 75%;
+    }
+    /* Fifths */
+    .pm-width-small-1-5 {
+        width: 20%;
+    }
+    .pm-width-small-2-5 {
+        width: 40%;
+    }
+    .pm-width-small-3-5 {
+        width: 60%;
+    }
+    .pm-width-small-4-5 {
+        width: 80%;
+    }
+}
+
+
+/* Tablet and bigger */
+
+@media (min-width: 768px) {
+    .pm-float-left-medium {
+        float: left;
+    }
+    .pm-float-right-medium {
+        float: right;
+    }
+
+    /* Whole */
+    .pm-width-medium-1-1 {
+        width: 100%;
+    }
+    /* Halves */
+    .pm-width-medium-1-2, .pm-width-medium-2-4, .pm-width-medium-3-6 {
+        width: 50%;
+    }
+    /* Thirds */
+    .pm-width-medium-1-3, .pm-width-medium-2-6 {
+        width: 33.333%;
+    }
+    .pm-width-medium-2-3, .pm-width-medium-4-6 {
+        width: 66.666%;
+    }
+    /* Quarters */
+    .pm-width-medium-1-4 {
+        width: 25%;
+    }
+    .pm-width-medium-3-4 {
+        width: 75%;
+    }
+    /* Fifths */
+    .pm-width-medium-1-5 {
+        width: 20%;
+    }
+    .pm-width-medium-2-5 {
+        width: 40%;
+    }
+    .pm-width-medium-3-5 {
+        width: 60%;
+    }
+    .pm-width-medium-4-5 {
+        width: 80%;
+    }
+}
+
+
+/* Desktop and bigger */
+
+@media (min-width: 960px) {
+    .pm-float-left-large {
+        float: left;
+    }
+
+    .pm-float-right-large {
+        float: right;
+    }
+    /* Whole */
+    .pm-width-large-1-1 {
+        width: 100%;
+    }
+    /* Halves */
+    .pm-width-large-1-2, .pm-width-large-2-4, .pm-width-large-3-6 {
+        width: 50%;
+    }
+    /* Thirds */
+    .pm-width-large-1-3, .pm-width-large-2-6 {
+        width: 33.333%;
+    }
+    .pm-width-large-2-3, .pm-width-large-4-6 {
+        width: 66.666%;
+    }
+    /* Quarters */
+    .pm-width-large-1-4 {
+        width: 25%;
+    }
+    .pm-width-large-3-4 {
+        width: 75%;
+    }
+    /* Fifths */
+    .pm-width-large-1-5 {
+        width: 20%;
+    }
+    .pm-width-large-2-5 {
+        width: 40%;
+    }
+    .pm-width-large-3-5 {
+        width: 60%;
+    }
+    .pm-width-large-4-5 {
+        width: 80%;
+    }
+}
+
+@media (min-width: 1220px) {
+    .pm-float-left-xlarge {
+        float: left;
+    }
+
+    .pm-float-right-xlarge {
+        float: right;
+    }
+    /* Whole */
+    .pm-width-xlarge-1-1 {
+        width: 100%;
+    }
+    /* Halves */
+    .pm-width-xlarge-1-2, .pm-width-xlarge-2-4, .pm-width-xlarge-3-6 {
+        width: 50%;
+    }
+    /* Thirds */
+    .pm-width-xlarge-1-3, .pm-width-xlarge-2-6 {
+        width: 33.333%;
+    }
+    .pm-width-xlarge-2-3, .pm-width-xlarge-4-6 {
+        width: 66.666%;
+    }
+    /* Quarters */
+    .pm-width-xlarge-1-4 {
+        width: 25%;
+    }
+    .pm-width-xlarge-3-4 {
+        width: 75%;
+    }
+    /* Fifths */
+    .pm-width-xlarge-1-5 {
+        width: 20%;
+    }
+    .pm-width-xlarge-2-5 {
+        width: 40%;
+    }
+    .pm-width-xlarge-3-5 {
+        width: 60%;
+    }
+    .pm-width-xlarge-4-5 {
+        width: 80%;
+    }
+}
